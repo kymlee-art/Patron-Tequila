@@ -1,0 +1,279 @@
+/*****COCKTAIL SECTION 1*****/
+
+.section-cocktails {
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 100vw;
+    /* margin: 2% 0% 0% 10%; */
+}
+
+.grid-cocktail {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
+    gap: 5px 5px;
+    grid-template-areas: "image image1 title" "image image1 subtitle " "image image1 agave1" "img3 text1 text1" "hornet1 img4 hornet2" "text2 text2 img5" ". img6 ." "img7 text3 text3" ". img8 hornet3" "text4 text4 img9" ". img10 hornet4" "img11 text5 text5" ". img12 ." ". . hornet5";
+    grid-template-columns: 25% 25% 40%;
+    justify-content: center;
+    align-content: center;
+    max-width: 84vw;
+}
+
+.cocktail-header,
+.cocktail-header-1 {
+    grid-area: title;
+    display: flex;
+    align-self: center;
+    float: left;
+    justify-self: left;
+    padding-bottom: 5%;
+    font-size: 3vw;
+}
+
+.header-2 .cocktail-header,
+.cocktail-header-2 {
+    grid-area: subtitle;
+    margin-top: -30%;
+    width: 75%;
+    text-align: initial;
+    font-size: 1vw;
+    font-style: italic;
+}
+.cocktail-header-2{
+    margin-top: -20%;
+}
+
+.cocktail-subtitle {
+    grid-area: subtitle;
+    color: #817f78;
+}
+
+
+/* Cocktail Images - MAIN*/
+
+.cocktail-images {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    transition: .2s ease-out;
+}
+
+.image-main {
+    grid-area: image;
+    width: 100%;
+    z-index: 2;
+}
+
+.image-2 {
+    grid-area: image;
+    width: 105%;
+    margin-left: -56%;
+    z-index: 4;
+}
+
+
+/* Cocktail TEXT */
+
+.txt1,
+.txt2,
+.txt3,
+.txt4,
+.txt5 {
+    color: #817f78;
+    display: block;
+    font-size: 1vw;
+    width: 60%;
+}
+.txt1{
+
+    margin-top: 5%;
+}
+.txt2{
+    margin-left: 5%
+}
+.txt3{
+    margin-left: 15%;
+}
+.cocktail-txt1 {
+    grid-area: text1;
+    padding: 9vw;
+    width: 70%;
+}
+
+.cocktail-txt2 {
+    grid-area: text2;
+    width: 90%;
+    padding: 27% 0% 5% 21%;
+}
+
+.cocktail-txt3 {
+    grid-area: text3;
+    width: 85%;
+    padding: 27% 0% 5% 21%;
+}
+
+.cocktail-txt4 {
+    grid-area: text4;
+    padding: 27% 0% 5% 34%;
+}
+
+.cocktail-txt5 {
+    grid-area: text5;
+    width: 75%;
+    padding: 27% 0% 5% 21%;
+}
+
+
+/* Cocktail IMAGES */
+
+
+/* set images to greyscale */
+
+.cocktail-1,
+.cocktail-2,
+.cocktail-3,
+.cocktail-4,
+.cocktail-5,
+.cocktail-6,
+.cocktail-7,
+.cocktail-8,
+.cocktail-9,
+.cocktail-10,
+.cocktail-11,
+.cocktail-12,
+.cocktail-13 {
+    transition: .2s ease-out;
+    filter: grayscale(1);
+    z-index: 2;
+}
+
+
+/* on hover images to show in color */
+
+.cocktail-1:hover,
+.cocktail-2:hover,
+.cocktail-3:hover,
+.cocktail-4:hover,
+.cocktail-5:hover,
+.cocktail-6:hover,
+.cocktail-7:hover,
+.cocktail-8:hover,
+.cocktail-9:hover,
+.cocktail-10:hover,
+.cocktail-11:hover,
+.cocktail-12:hover {
+    filter: grayscale(0);
+}
+
+.cocktail-image {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.cocktail-image:hover {
+    transform: scale(1.1) !important;
+}
+
+.cocktail-3 {
+    grid-area: img3;
+}
+
+.c-4 {
+    width: 120%;
+    margin: auto;
+}
+
+.c-6,
+.c-8,
+.c-12 {
+    width: 100%;
+}
+
+.c-5,
+.c-7,
+.c-9 {
+    width: 55%;
+}
+
+.c-3,
+.c-11,
+.c-10 {
+    width: 70%;
+}
+
+.cocktail-4 {
+    grid-area: img4;
+    width: 100%;
+}
+
+.cocktail-5 {
+    grid-area: img5;
+}
+
+.cocktail-6 {
+    grid-area: img6;
+}
+
+.cocktail-7 {
+    grid-area: img7;
+}
+
+.cocktail-8 {
+    grid-area: img8;
+}
+
+.cocktail-9 {
+    grid-area: img9;
+}
+
+.cocktail-10 {
+    grid-area: img10;
+}
+
+.cocktail-11 {
+    grid-area: img11;
+}
+
+.cocktail-12 {
+    grid-area: img12;
+}
+
+
+/*
+.hornet {
+    display: inline-block;
+} */
+
+.hornet1 {
+    grid-area: hornet1;
+    margin-top: -92%;
+    z-index: 2;
+    width: 200%;
+    transform: rotate(30deg);
+}
+
+.hornet2 {
+    width: 115%;
+    grid-area: hornet2;
+}
+
+.hornet3 {
+    width: 85%;
+    transform: rotate( 31deg);
+    grid-area: hornet3;
+}
+
+.hornet4 {
+    grid-area: text4;
+    width: 50%;
+}
+
+.hornet5 {
+    grid-area: hornet5;
+    margin: 25% 5% 0 5%;
+    width: 58%;
+    transform: rotate( 31deg);
+}
